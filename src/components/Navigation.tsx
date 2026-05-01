@@ -58,7 +58,7 @@ const Navigation = () => {
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center gap-3">
             <a 
-              href="https://drive.google.com/file/d/19eE9dxYUrYSPxcWY0m9mAhRulyRxLxzM/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/1sO1anJIsBtN7-ArmhtCv7fR7op8Wz1dv/view?usp=sharing" 
               target="_blank"
               rel="noopener noreferrer"
               className="btn-outline text-sm"
@@ -100,7 +100,7 @@ const Navigation = () => {
                 </a>
               ))}
               <a
-                href="https://drive.google.com/file/d/19eE9dxYUrYSPxcWY0m9mAhRulyRxLxzM/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1sO1anJIsBtN7-ArmhtCv7fR7op8Wz1dv/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMobileMenuOpen(false)}

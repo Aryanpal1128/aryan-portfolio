@@ -67,7 +67,7 @@ const AboutSection = () => {
                 <ArrowUpRight className="w-4 h-4" />
               </a>
               <a 
-                href="/resume.pdf" 
+                href="https://drive.google.com/file/d/1sO1anJIsBtN7-ArmhtCv7fR7op8Wz1dv/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-outline"
