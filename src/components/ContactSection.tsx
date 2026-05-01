@@ -73,8 +73,19 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate form submission - replace with actual API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      const emailjs = await import("@emailjs/browser");
+
+      await emailjs.send(
+        "service_vx7uygw",
+        "template_pbgtits",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: "Aryan Pal",
+        },
+        "BRY6uivCM-9qMoXTo"
+      );
       
       toast({
         title: "Message Sent Successfully! ✉️",
