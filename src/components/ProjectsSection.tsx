@@ -1,4 +1,4 @@
-import { Github, ArrowUpRight, Folder, Sparkles } from "lucide-react";
+import { Github, ArrowUpRight, Folder, Sparkles, ExternalLink } from "lucide-react";
 import { FloatingAsterisk, ArrowDecor } from "./DecorativeElements";
 
 const ProjectsSection = () => {
@@ -10,6 +10,7 @@ const ProjectsSection = () => {
       features: ["JWT Authentication", "REST APIs", "Real-time Location", "Order Tracking"],
       tags: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind CSS", "Cloudinary"],
       github: "https://github.com/Aryanpal1128/fooddelivery",
+      demo: "https://forfoodiee.netlify.app",
       featured: true,
     },
     {
@@ -37,6 +38,7 @@ const ProjectsSection = () => {
       features: ["Real-time Data", "API Integration", "Location-based", "Responsive UI"],
       tags: ["JavaScript", "React", "Weather API", "HTML", "CSS"],
       github: "https://github.com/Aryanpal1128/Projects/tree/main/Weatherapp",
+      demo: "https://weatherdek.netlify.app",
       featured: false,
     },
   ];
@@ -112,16 +114,27 @@ const ProjectsSection = () => {
               </div>
 
               {/* Links */}
-              <div className="flex gap-4">
+              <div className="flex flex-wrap gap-3">
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors text-sm font-medium"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors text-sm font-medium"
                 >
                   <Github className="w-4 h-4" />
-                  View Code (GitHub)
+                  View Code
                 </a>
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-primary/10 text-primary hover:bg-primary hover:text-primary-foreground transition-colors text-sm font-medium"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Live Demo
+                  </a>
+                )}
               </div>
             </div>
           ))}
